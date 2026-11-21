@@ -2,8 +2,8 @@ import { ChatGroq } from '@langchain/groq';
 import { ToolMessage } from 'langchain';
 import { getApiKey } from '../../utils/file.utils.js';
 import { AIMessage } from 'langchain';
-import { upsertFiles, readFiles, listFiles } from '../tools/files.tool.js';
-import * as fileTools from '../tools/files.tool.js';
+import { upsertFiles, readFiles, listFiles } from '../tools/file.tool.js';
+import * as fileTools from '../tools/file.tool.js';
 import rl from '../../utils/readline.js';
 
 /**
