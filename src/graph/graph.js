@@ -16,7 +16,7 @@ const graph = new StateGraph(stateFormat)
 
 export default async function initGraph() {
   while (true) {
-    const userInput = await rl.queestion('[User]:');
+    const userInput = await rl.question('[User]:');
     const response = await graph.invoke({
       messages: [new HumanMessage(userInput)],
     });
